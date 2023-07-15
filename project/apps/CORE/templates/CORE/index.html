@@ -6,5 +6,15 @@
 {% endblock TITULO %}
 
 {% block CONTENIDO %}
-    {{ saludo }}
+
+    {% for cliente in clientes %}
+    <h2>{{ cliente.nombre }}</h2>
+    <p>{{ cliente.apellido }}</p>
+    <p>{{ cliente.nacimiento }}</p>
+    <p>{{ cliente.pais_origen_id }}</p>
+    {% endfor %}
+
+    <a href="{% url 'Home:home' %}">Ir al menú principal</a>
+
+{{ saludo }}
 {% endblock CONTENIDO %}

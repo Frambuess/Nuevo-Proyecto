@@ -1,5 +1,14 @@
-from django.shortcuts import render
+from datetime import date
+
+from django.http import HttpRequest, HttpResponse
+from django.shortcuts import redirect, render
+from django.urls import is_valid_path
 
 # Create your views here.
+from .models import Cliente, Marcadetarjeta, Pais
+
 def home(request):
-    return render(request, "CORE/index.html", {"saludo": "HOLAAA"})
+    clientes_registros = Cliente.objects.all()
+    contexto = {"clientes": clientes_registros}
+    # return render(request, "index.html", {"clientes": clientes_registros})
+    return render(request, "CORE/index.html", contexto)
