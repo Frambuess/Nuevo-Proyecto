@@ -2,19 +2,24 @@
 
 Proyecto Tienda Online
 
+
 ## Sobre el autor
 
 Soy matemática, trabajo con bases de datos y estoy aprendiendo a hacer una página web por primera vez!
+
 
 ## Descripción breve del proyecto
 
 Es un ensayo de página web de un negocio de venta online. 
 
+
 ## La parte técnica del proyecto
 
 Python, Django, Git, Github, Visual Studio Code, Html
 
+
 ## Errores conocidos
+
 
 
 ## Futuras mejoras
