@@ -6,9 +6,21 @@
 
 {% block CONTENIDO %}
 
-    <h2>{{ clientes_nombre }}</h2>
+    <h2> Cliente nombre empieza con 'm'</h2>
+    {% for cliente in clientes_nombre %}
+        <p>{{ cliente }}</p>
+    {% endfor %}
 
-    <br>
+    <h2> Cliente nacimiento despues de 2005 (mayor de edad) </h2>
+    {% for cliente in clientes_nacimiento %}
+        <p> {{ cliente }}</p>
+    {% endfor %}
+
+    <h2> Clientes de Argentina  </h2>
+    {% for cliente in clientes_pais %}
+        <p> {{ cliente }}</p>
+    {% endfor %}
+
     <a href="{% url 'Home:home' %}">Ir al menú principal</a>
 
 {% endblock CONTENIDO %}

@@ -34,14 +34,14 @@ def busqueda(request: HttpRequest) -> HttpResponse:
     cliente_nombre = Cliente.objects.filter(nombre__contains="M")
 
     # Nacimientos  mayores a 2005
-    cliente_nacimiento = Cliente.objects.filter(
-        nacimiento__gt=date(2005, 1, 1))
-    
-    #today = date.today()
-    #age = today.year - Cliente.nacimiento.year - ((today.month, today.day) < (Cliente.nacimiento.month, Cliente.nacimiento.day))
+    cliente_nacimiento = Cliente.objects.filter( nacimiento__gt=date(2005, 1, 1))
+
+    #age = date.today().year - nacimiento.year - ((date.today().month, date.today().day) < (nacimiento.month, nacimiento.day))
+
+    #cliente_nacimiento = Cliente.objects.filter((date.today().year - nacimiento.year - ((date.today().month, date.today().day) < (nacimiento.month, nacimiento.day)))__gte=18)
 
     # País de origen vacío
-    cliente_pais = Cliente.objects.filter(pais_origen_id=None)
+    cliente_pais = Cliente.objects.filter(pais_origen_id="Argentina")
 
     contexto = {
         "clientes_nombre": cliente_nombre,
