@@ -8,7 +8,10 @@ from django.urls import is_valid_path
 from .models import Cliente, Marcadetarjeta, Pais
 
 def home(request):
+    return render(request, "CORE/base.html")
+
+def clientes(request):
     clientes_registros = Cliente.objects.all()
     contexto = {"clientes": clientes_registros}
     # return render(request, "index.html", {"clientes": clientes_registros})
-    return render(request, "CORE/index.html", contexto)
+    return render(request, "CORE/clientes.html", contexto)
