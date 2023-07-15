@@ -11,7 +11,7 @@
 
     <h1>{{ cliente.nombre }} {{ cliente.apellido }}</h1>
     <p>Nació el {{ cliente.nacimiento }} en {{ cliente.pais_origen_id }}.</p>
-    <p>Tiene una tarjeta {{ cliente.Marcadetarjeta }} nro {{ cliente.nrotarjeta }}.</p>
+    <p>Paga a través de {{ <cliente class="Mediodepago"></cliente> }} nro {{ cliente.nrotarjeta }}.</p>
 
     {% endfor %}
 
