@@ -5,7 +5,7 @@ from django.shortcuts import redirect, render
 from django.urls import is_valid_path
 
 # Create your views here.
-from .models import Cliente, Marcadetarjeta, Pais
+from .models import Cliente, Mediodepago, Pais
 
 def home(request):
     return render(request, "CORE/base.html")
