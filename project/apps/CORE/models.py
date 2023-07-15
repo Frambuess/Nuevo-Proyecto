@@ -23,7 +23,7 @@ class Cliente(models.Model):
     marca_id=models.ForeignKey(Marcadetarjeta, on_delete=models.SET_NULL, null=True)
 
     def __str__(self):
-        return f"{self.nombre} {self.apellido}"
+        return f"{self.nombre} {self.apellido}. Nació el {self.nacimiento}. Su tarjeta es {self.marca_id} nro {self.nrotarjeta}"
     
 
 '''
