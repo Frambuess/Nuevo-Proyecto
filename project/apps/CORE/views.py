@@ -11,6 +11,12 @@ from .models import Cliente, Mediodepago, Pais
 def home(request):
     return render(request, "CORE/base.html")
 
+def clientes(request):
+    clientes_registros = Cliente.objects.all()
+    contexto = {"clientes": clientes_registros}
+    # return render(request, "index.html", {"clientes": clientes_registros})
+    return render(request, "CORE/clientes.html", contexto)
+
 
 def crear_cliente(request: HttpRequest) -> HttpResponse:
     if request.method == "POST":
@@ -21,3 +27,25 @@ def crear_cliente(request: HttpRequest) -> HttpResponse:
     else:  # request.method == "GET"
         form = ClienteForm()
     return render(request, "CORE/crear.html", {"form": form})
+
+
+def busqueda(request: HttpRequest) -> HttpResponse:
+    # Búsqueda por nombre que contenga "M"
+    cliente_nombre = Cliente.objects.filter(nombre__contains="M")
+
+    # Nacimientos  mayores a 2005
+    cliente_nacimiento = Cliente.objects.filter(
+        nacimiento__gt=date(2005, 1, 1))
+    
+    #today = date.today()
+    #age = today.year - Cliente.nacimiento.year - ((today.month, today.day) < (Cliente.nacimiento.month, Cliente.nacimiento.day))
+
+    # País de origen vacío
+    cliente_pais = Cliente.objects.filter(pais_origen_id=None)
+
+    contexto = {
+        "clientes_nombre": cliente_nombre,
+        "clientes_nacimiento": cliente_nacimiento,
+        "clientes_pais": cliente_pais
+    }
+    return render(request, "CORE/search.html", contexto)

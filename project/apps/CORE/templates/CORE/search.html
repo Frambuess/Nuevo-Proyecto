@@ -1,0 +1,14 @@
+{% extends 'Core/base.html' %}
+
+{% block TITULO %} 
+    Búsquedas
+{% endblock TITULO %}
+
+{% block CONTENIDO %}
+
+    <h2>{{ clientes_nombre }}</h2>
+
+    <br>
+    <a href="{% url 'Home:home' %}">Ir al menú principal</a>
+
+{% endblock CONTENIDO %}
