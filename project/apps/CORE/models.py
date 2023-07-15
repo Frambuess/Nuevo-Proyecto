@@ -23,4 +23,4 @@ class Cliente(models.Model):
     nrotarjeta=models.IntegerField(null=True)
 
     def __str__(self):
-        return f"{self.nombre} {self.apellido}. Nació el {self.nacimiento}. Su tarjeta es {self.medio_id} nro {self.nrotarjeta}"
+        return f"{self.nombre} {self.apellido}. Nació el {self.nacimiento}. Paga a través de {self.medio_id} nro {self.nrotarjeta}"
