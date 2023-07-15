@@ -17,7 +17,6 @@ def clientes(request):
     return render(request, "CORE/clientes.html", contexto)
 
 def crear_clientes(request):
-    from datetime import date
 
     p1 = Pais(nombre="Argentina")
     p2 = Pais(nombre="Brasil")
