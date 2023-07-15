@@ -1,20 +1,20 @@
-##Nombre del proyecto
+# Nombre del proyecto
 
 
 
-##Sobre el autor
+## Sobre el autor
 
 Irina Moldavsky
 
-##Descripción breve del proyecto
+## Descripción breve del proyecto
 
 
 
-##La parte técnica del proyecto
+## La parte técnica del proyecto
 
 Python, Django, Git, Github, Visual Studio Code, Css, 
 
-##Errores conocidos
+## Errores conocidos
 
-##Futuras mejoras
+## Futuras mejoras
 

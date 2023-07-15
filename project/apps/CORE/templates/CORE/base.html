@@ -8,15 +8,28 @@
 <body>
     <h1>
         {% block TITULO %} 
-
+            TITULO
         {% endblock TITULO %}
     </h1>
 
+    <nav class="navbar navbar-light bg-light static-top">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'Inicio' %}">Inicio</a>
+            <a class="navbar-brand" href="{% url 'Profesores' %}">Profesores</a>
+            <a class="navbar-brand" href="{% url 'Cursos' %}">Cursos</a>
+            <a class="navbar-brand" href="{% url 'Estudiantes' %}">Estudiantes</a>
+            <a class="navbar-brand" href="{% url 'Entregables' %}">Entregables</a>
+            <a class="btn btn-primary" href="#NADAAUN">INICIAR</a>
+        </div>
+    </nav>
+
     <p> 
     {% block CONTENIDO %} 
-
+        CONTENIDO
     {% endblock CONTENIDO %}
     </p>
+
+    <footer>Copyright 2023 Iripop®</footer>
 
 
 </body>
