@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Nombre del proyecto
 Proyecto Tienda Online
 
@@ -24,3 +25,6 @@ Python, Django, Git, Github, Visual Studio Code, Html
 
 Quiero poder calcular la edad (a partir de la fecha de nacimiento), para hacer más exacto el cálculo de los mayores de edad. 
 Me gustaría llevar estadística del porcentaje de clientes argentinos respecto del total. Hacer gráficos con las ventas diarias.
+=======
+irina
+>>>>>>> 28b71f7 (Revert "readme")
