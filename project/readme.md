@@ -1,10 +1,8 @@
 # Nombre del proyecto
-
 Proyecto Tienda Online
 
 
 ## Sobre el autor
-
 Soy matemática, trabajo con bases de datos y estoy aprendiendo a hacer una página web por primera vez!
 
 
