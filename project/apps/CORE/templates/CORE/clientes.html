@@ -1,11 +1,11 @@
-{% extends 'CORE/base.html' %}
+{% extends 'CORE/index.html' %}
 
  
 {% block TITULO %} 
     Clientes
 {% endblock TITULO %}
 
-{% block CONTENIDO %}
+{% block INDEX_CONTENIDO %}
 
     {% for cliente in clientes %}
 
@@ -18,4 +18,4 @@
     <a href="{% url 'Home:home' %}">Ir al menú principal</a>
 
 {{ saludo }}
-{% endblock CONTENIDO %}
+{% endblock INDEX_CONTENIDO %}
