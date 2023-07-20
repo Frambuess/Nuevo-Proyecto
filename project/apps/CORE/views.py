@@ -48,4 +48,4 @@ def busqueda(request: HttpRequest) -> HttpResponse:
         "clientes_nacimiento": cliente_nacimiento,
         "clientes_pais": cliente_pais
     }
-    return render(request, "CORE/search.html", contexto)
+    return render(request, "CORE/busqueda.html", contexto)

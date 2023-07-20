@@ -26,11 +26,17 @@ Y tiene algunas búsquedas en la base (http://127.0.0.1:8000/busqueda/):
 
 Se utilizó Python, Visual Studio Code, Django Framework con MVT, Git, Github y Html.
 
+Superuser: admin
+Clave: 1234
+
 
 ## Errores conocidos
 
 
+
+
 ## Futuras mejoras
 
-Quiero poder calcular la edad (a partir de la fecha de nacimiento), para hacer más exacto el cálculo de los clientes mayores de edad. 
-Me gustaría llevar estadística del porcentaje de clientes argentinos respecto del total. Hacer gráficos con las ventas diarias.
+- Quiero poder calcular la edad (a partir de la fecha de nacimiento), para hacer más exacto el cálculo de los clientes mayores de edad. 
+- Me gustaría llevar estadística del porcentaje de clientes argentinos respecto del total. Hacer gráficos con las ventas diarias.
+- Acceder a los datos de clientes o búsquedas solo a partir de un login.

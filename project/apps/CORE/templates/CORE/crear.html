@@ -1,10 +1,10 @@
-{% extends 'Core/base.html' %}
+{% extends 'Core/index.html' %}
 
-{% block TITULO %} 
+{% block INDEX_TITULO %} 
     Crear Cliente
-{% endblock TITULO %}
+{% endblock INDEX_TITULO %}
 
-{% block CONTENIDO %}
+{% block INDEX_CONTENIDO %}
 
     <form method="post">
         {% csrf_token %}
@@ -14,4 +14,4 @@
     <br>
     <a href="{% url 'Home:home' %}">Ir al menú principal</a>
 
-{% endblock CONTENIDO %}
+{% endblock INDEX_CONTENIDO %}

@@ -1,10 +1,10 @@
-{% extends 'Core/base.html' %}
+{% extends 'CORE/index.html' %}
 
-{% block TITULO %} 
+{% block INDEX_TITULO %} 
     Búsquedas
-{% endblock TITULO %}
+{% endblock INDEX_TITULO %}
 
-{% block CONTENIDO %}
+{% block INDEX_CONTENIDO %}
 
     <h2> Clientes cuyo nombre contiene 'm'</h2>
     {% for cliente in clientes_nombre %}
@@ -23,4 +23,4 @@
 
     <a href="{% url 'Home:home' %}">Ir al menú principal</a>
 
-{% endblock CONTENIDO %}
+{% endblock INDEX_CONTENIDO %}
