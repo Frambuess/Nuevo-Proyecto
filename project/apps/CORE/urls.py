@@ -15,3 +15,5 @@ urlpatterns = [
 ]
 
 urlpatterns += staticfiles_urlpatterns()
+### Esto sirve para poder usar los archivos de static
+### desde los HTML o templates
