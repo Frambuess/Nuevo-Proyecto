@@ -12,9 +12,11 @@ Soy matemática, trabajo con bases de datos y estoy aprendiendo a hacer una pág
 
 Es un ensayo de desarrollo de página web en django. Se trata de un negocio de venta online. 
 
-Se pueden agregar clientes con un formulario (nombre, apellido, país, fecha de nacimiento y medio de pago). Entrando como admin se puede también agregar, borrar o editar.
+Se pueden agregar clientes con un formulario (http://127.0.0.1:8000/crear/) ingresando nombre, apellido, país, fecha de nacimiento y medio de pago. Entrando como admin se puede también agregar, borrar o editar.
 
-Y tiene algunas búsquedas en la base:
+También hay una página para visualizar todos los clientes (http://127.0.0.1:8000/clientes/).
+
+Y tiene algunas búsquedas en la base (http://127.0.0.1:8000/busqueda/):
 
 - Clientes cuyo nombre contenga una m
 - Clientes que hayan nacido antes de 2005 y, por lo tanto, mayores de edad 
