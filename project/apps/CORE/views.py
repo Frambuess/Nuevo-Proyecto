@@ -9,7 +9,7 @@ from .forms import ClienteForm
 from .models import Cliente, Mediodepago, Pais
 
 def home(request):
-    return render(request, "CORE/base.html")
+    return render(request, "CORE/index.html")
 
 def clientes(request):
     clientes_registros = Cliente.objects.all()

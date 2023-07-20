@@ -1,4 +1,6 @@
 from django.urls import path
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
 from . import views
 from .views import home, crear_cliente, busqueda
 
@@ -11,3 +13,5 @@ urlpatterns = [
     path('crear/', crear_cliente, name="crear"),
     path('busqueda/', busqueda, name="busqueda"),
 ]
+
+urlpatterns += staticfiles_urlpatterns()

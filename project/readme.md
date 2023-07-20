@@ -10,7 +10,7 @@ Soy matemática, trabajo con bases de datos y estoy aprendiendo a hacer una pág
 
 ## Descripción breve del proyecto
 
-Es un ensayo de desarrollo de página web en django. Se trata de un negocio de venta online. 
+Es un ensayo de desarrollo de aplicación web en django. Se trata de un negocio de venta online. 
 
 Se pueden agregar clientes con un formulario (http://127.0.0.1:8000/crear/) ingresando nombre, apellido, país, fecha de nacimiento y medio de pago. Entrando como admin se puede también agregar, borrar o editar.
 
