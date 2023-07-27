@@ -2,4 +2,3 @@
 **/__pycache__/
 **/migrations/*.py
 !__init__.py
-**/db.sqlite3
